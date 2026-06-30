@@ -57,11 +57,11 @@ Each project has its own README with full setup instructions.
 
 **Local dev (start here):**
 
-1. Follow the backend Quick Start — seeds the DB, runs diagnostics, starts on `8080`.
-2. In a second terminal, run `npm install && npm run dev` in `dashboard-frontend` — opens on `3004`.
+1. In `springboot-gcp-dashboard-backend`: run `./scripts/local-dev.sh` — checks prereqs, seeds the DB, runs diagnostics, starts on `8080`.
+2. In a second terminal, in `dashboard-frontend`: run `npm install && npm run dev` — opens on `3004`.
 3. Search orders and verify chart/list consistency.
 
-**GCP deploy:** see the GCP Deploy section in the backend README.
+**GCP deploy:** `GCP_PROJECT=your-project-id ./scripts/infra-up.sh`, then `./scripts/prepare-demo-data.sh`, then `./scripts/deploy.sh`. Tear down with `./scripts/infra-down.sh`.
 
 ## Why This Matters
 
