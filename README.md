@@ -53,20 +53,19 @@ flowchart LR
 
 ## How To Use
 
-Each project has its own README and setup instructions.
+Each project has its own README with full setup instructions.
 
-Recommended flow:
+**Local dev (start here):**
 
-1. Bring up the GCP infrastructure (`springboot-gcp-dashboard-backend`).
-2. Prepare demo data and read models.
-3. Start the backend on `8080`.
-4. Start the frontend on `3004`.
-5. Search orders and verify chart/list consistency.
-6. Tear down GCP infrastructure when finished.
+1. Follow the backend Quick Start — seeds the DB, runs diagnostics, starts on `8080`.
+2. In a second terminal, run `npm install && npm run dev` in `dashboard-frontend` — opens on `3004`.
+3. Search orders and verify chart/list consistency.
+
+**GCP deploy:** see the GCP Deploy section in the backend README.
 
 ## Why This Matters
 
 Java/Spring Boot projects often separate frontend and backend completely. These labs
 make the full-stack tradeoffs visible: fast search via pre-aggregated read models,
 chart responsiveness, GCP-native deployment, and local dev workflow all live in one
-comparison surface — mirroring the Next.js Labs for direct cross-stack comparison.
+comparison surface.
