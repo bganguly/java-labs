@@ -9,9 +9,7 @@ This repository is the index and architecture hub. Source code lives in the two 
 
 ---
 
-## CVS JD Alignment
-
-| JD Requirement | This Project |
+| | |
 |---|---|
 | **Java / Spring Boot back-end** | Spring Boot 4, Java 21, NamedParameterJdbcTemplate, Flyway schema migrations |
 | **React / TypeScript front-end** | React 19, TypeScript, Vite, Tailwind CSS, Recharts |
